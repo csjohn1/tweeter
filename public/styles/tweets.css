@@ -1,0 +1,41 @@
+.tweetcontainer {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  width: 90%;
+  border: 5px solid grey;
+  padding: .75em;
+  margin-bottom: 3em;
+  color:#A9A9A9;
+}
+.tweetcontainer:hover {
+  box-shadow: 8px 8px #BEBEBE;
+  color: #808080;
+}
+.tweetcontainer:hover .handle {
+  color: #BEBEBE;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+.handle {
+  color: transparent;
+}
+.tweet-body {
+  display: flex;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  border-top: 5px solid grey;
+  font-size: small;
+}
+.feet {
+  margin-top: .75em;
+}
+p {
+  margin: 0;
+}
