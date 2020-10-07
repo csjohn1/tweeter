@@ -1,11 +1,16 @@
 .navbar {
   display: flex;
+  justify-content: space-between;
   background-color: #4056A1;
   height: 120px;
   color: #FFFFFF;
   padding: 1.5em;
 }
 
-.navspan {
+.navleft {
+ 
   font-family: 'Bungee', cursive;
+}
+.navright {
+  
 }
