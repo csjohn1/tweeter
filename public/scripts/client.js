@@ -37,7 +37,7 @@ $(document).ready(function () {
     $tweet += "<footer>"
     $tweet += `<p class="feet">${tweet.created_at}</p>`
     //  $tweet += `<p class="feet">${Date.now()}</p>`
-    $tweet += `<p class="feet">misc</p>`
+    $tweet += `<p class="feet">Retweet</p>`
     $tweet += "</footer>"
     $tweet += "</article>"
     return $tweet;

@@ -1,3 +1,27 @@
+
+@media only screen and (min-width: 768px) {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    height: 120px;
+    color: #606060;
+    padding: 1.5em;
+    position: sticky; 
+    top: 0; 
+    width: 100%; 
+  }
+  
+  .navleft {
+   
+    font-family: 'Bungee', cursive;
+  }
+  .navright {
+  }
+  }
+
+@media only screen and (min-width: 1024px) {
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -15,5 +39,5 @@
   font-family: 'Bungee', cursive;
 }
 .navright {
-  
+}
 }
