@@ -1,8 +1,11 @@
+.tweetsection{
+  width: 90%;
+}
+
 .tweetcontainer {
   display: flex;
   flex-direction: column;
   font-family: 'Open Sans', sans-serif;
-  width: 90%;
   border: 5px solid grey;
   padding: .75em;
   margin-bottom: 3em;
@@ -17,10 +20,20 @@
 }
 header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 1.5em;
 }
+.header-right {
+  display: flex;
+  justify-content: flex-start;
+}
+#dp {
+  margin-right: 1em; 
+}
 .handle {
+  display: flex;
+  justify-content: end;
   color: transparent;
 }
 .tweet-body {
