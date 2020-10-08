@@ -6,6 +6,17 @@
   margin-bottom: 2.5em;
 }
 
+.error{
+  display: none;
+}
+
+.error1 {
+color: red;
+}
+.error2 {
+color: red;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
