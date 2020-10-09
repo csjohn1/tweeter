@@ -6,12 +6,14 @@
 
 $(document).ready(function() {
 
+  // Loops through database of tweets and appends them to the tweet container
   const renderTweets = function(tweets) {
     for (let tweet of tweets) {
       let $tweet = createTweetElement(tweet);
       $('#tweets-container').append($tweet);
     }
   };
+  // Creates html output with given information
   const createTweetElement = function(tweet) {
     const escape =  function(str) {
       let div = document.createElement('div');
@@ -31,13 +33,12 @@ $(document).ready(function() {
     $tweet += "</div>";
     $tweet += "<footer>";
     $tweet += `<p class="feet">${tweet.created_at}</p>`;
-    //  $tweet += `<p class="feet">${Date.now()}</p>`
-    $tweet += `<p class="feet" id="flag">Flag Retweet Like</p>`;
+    $tweet += `<p class="feet">Flag Retweet Like</p>`;
     $tweet += "</footer>";
     $tweet += "</article>";
     return $tweet;
   };
-
+  // Posts inputted tweet to database then fetches updated database
   $('form').on('submit', function(event) {
     event.preventDefault();
     if ($('#tweet-text').val().length > 140) {
@@ -62,7 +63,7 @@ $(document).ready(function() {
         });
     }
   });
-
+  //Fetcher used in previous function
   const loadTweets = function() {
     console.log("YES!");
     $.ajax({
