@@ -1,7 +1,6 @@
 .tweetsection{
   width: 90%;
 }
-
 .tweetcontainer {
   display: flex;
   flex-direction: column;
@@ -42,20 +41,12 @@ header {
   display: flex;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  /* align-content: flex-start;
-  word-wrap: normal;
-  overflow-wrap: normal;
-  width: 90%;
-  flex-grow: 1; */
 }
 
 .tweet-text {
   display: flex;
-  /* align-content: flex-start; */
   word-wrap: break-word;
   overflow-wrap: break-word;
-  /* width: 90%;
-  flex-grow: 1; */
 } 
 footer {
   display: flex;
@@ -70,3 +61,4 @@ footer {
 p {
   margin: 0;
 }
+

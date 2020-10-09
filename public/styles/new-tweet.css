@@ -4,27 +4,23 @@
   font-family: 'Open Sans', sans-serif;
   width: 90%;
   margin-bottom: 2.5em;
+  margin-top: 2.5em;
 }
-
 .error{
   display: none;
 }
-
 .error1 {
 color: red;
 }
 .error2 {
 color: red;
 }
-
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 1em;
-  
 }
-
 .tweet{
   display: flex;
   flex-direction: column;
@@ -39,18 +35,15 @@ button {
   font-family: 'Bungee', cursive;
   justify-content: flex-start;
 }
-
 .counter {
   display: flex;
   font-family: 'Bungee', cursive;
   justify-content: flex-end;
 }
-
 #tweet-text {
   display: flex;
   background-color: transparent;
   border: none;
   margin-top: .25em;
   word-wrap: break-word;
-
 }
