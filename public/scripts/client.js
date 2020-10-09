@@ -32,7 +32,7 @@ $(document).ready(function () {
     $tweet += `<p class="handle">${tweet.user.handle}</p>`
     $tweet += "</header>"
     $tweet += `<div class="tweet-body">`
-    $tweet += `<p>${escape(tweet.content.text)}</p>`
+    $tweet += `<p class="tweet-text">${escape(tweet.content.text)}</p>`
     $tweet += "</div>"
     $tweet += "<footer>"
     $tweet += `<p class="feet">${tweet.created_at}</p>`

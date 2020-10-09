@@ -10,6 +10,8 @@
   padding: .75em;
   margin-bottom: 3em;
   color:#A9A9A9;
+  word-wrap: normal;
+  overflow-wrap: normal;
 }
 .tweetcontainer:hover {
   box-shadow: 8px 8px #BEBEBE;
@@ -38,7 +40,23 @@ header {
 }
 .tweet-body {
   display: flex;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  /* align-content: flex-start;
+  word-wrap: normal;
+  overflow-wrap: normal;
+  width: 90%;
+  flex-grow: 1; */
 }
+
+.tweet-text {
+  display: flex;
+  /* align-content: flex-start; */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  /* width: 90%;
+  flex-grow: 1; */
+} 
 footer {
   display: flex;
   justify-content: space-between;

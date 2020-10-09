@@ -51,5 +51,6 @@ button {
   background-color: transparent;
   border: none;
   margin-top: .25em;
+  word-wrap: break-word;
 
 }

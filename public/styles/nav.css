@@ -17,8 +17,8 @@
    
     font-family: 'Bungee', cursive;
   }
-  .navright {
-  }
+  /* .navright {
+  } */
   }
 
 @media only screen and (min-width: 1024px) {
@@ -38,6 +38,6 @@
  
   font-family: 'Bungee', cursive;
 }
-.navright {
-}
+/* .navright {
+} */
 }
