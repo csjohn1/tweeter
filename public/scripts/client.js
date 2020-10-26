@@ -61,6 +61,7 @@ $(document).ready(function() {
         .then(function() {
           loadTweets();
           $("textarea").val("");
+          $(".counter").val(140);
           console.log('Success');
         });
     }
