@@ -32,7 +32,7 @@ $(document).ready(function() {
     $tweet += `<p class="tweet-text">${escape(tweet.content.text)}</p>`;
     $tweet += "</div>";
     $tweet += "<footer>";
-    $tweet += `<p class="feet">${tweet.created_at}</p>`;
+    $tweet += `<p class="feet">${time(tweet.created_at)}</p>`;
     $tweet += `<p class="feet">Flag Retweet Like</p>`;
     $tweet += "</footer>";
     $tweet += "</article>";
@@ -42,15 +42,16 @@ $(document).ready(function() {
   $('form').on('submit', function(event) {
     event.preventDefault();
     if ($('#tweet-text').val().length > 140) {
-      $(".error1").append('twete 2 long');
+      $(".error1").append('Tweet is too long');
       $(".error").slideDown();
     } else if ($('#tweet-text').val() === '') {
-      $(".error2").append('where the twete');
+      $(".error2").append('Please enter a tweet');
       $(".error").slideDown();
     } else {
       $(".error").slideUp();
       $(".error1").empty();
       $(".error2").empty();
+      
       console.log('Button clicked, performing ajax call...');
       $.ajax({
         url: '/tweets/',
@@ -59,6 +60,7 @@ $(document).ready(function() {
       })
         .then(function() {
           loadTweets();
+          $("textarea").val("");
           console.log('Success');
         });
     }
@@ -78,3 +80,22 @@ $(document).ready(function() {
   };
   loadTweets();
 });
+
+// Time stamp function
+
+const time = created => {
+  const diff = Date.now() - created;
+  if (diff < 1000) {
+    return "Just now";
+  } else if (diff < 60000) {
+    return Math.floor(diff / 1000) + " second(s) ago";
+  } else if (diff < 360000) {
+    return Math.floor(diff / 60000) + " minute(s) ago";
+  } else if (diff < 86400000) {
+    return Math.floor(diff / 360000) + " hour(s) ago";
+  } else if (diff < 31536000000) {
+    return Math.floor(diff / 86400000) + " day(s) ago";
+  } else {
+    return Math.floor(diff / 31536000000) + " year(s) ago";
+  }
+};
