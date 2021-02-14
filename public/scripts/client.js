@@ -68,7 +68,6 @@ $(document).ready(function() {
   });
   //Fetcher used in previous function
   const loadTweets = function() {
-    console.log("YES!");
     $.ajax({
       url: "/tweets/",
       method: "GET"
